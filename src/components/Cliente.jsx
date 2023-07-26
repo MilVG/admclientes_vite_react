@@ -29,6 +29,7 @@ const Cliente = ({ cliente }) => {
               </button>
             
               <Form
+                  className='p-2'
                   method='POST'
                   action={`/Clientes/${id}/eliminar`}
                   onSubmit={(e) => {
@@ -38,7 +39,6 @@ const Cliente = ({ cliente }) => {
                       }
                   }}
               >
-                  
                 <button
                     type='submit'
                     className='text-red-400  hover:text-red-800 uppercase font-bold text-xs'
